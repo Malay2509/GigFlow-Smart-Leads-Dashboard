@@ -15,10 +15,11 @@ const signToken = (id: string, role: string): string => {
 
 // POST /api/auth/register
 export const register = asyncHandler(async (req: Request, res: Response) => {
-  const { name, email, password } = req.body as {
+  const { name, email, password, role } = req.body as {
     name: string;
     email: string;
     password: string;
+    role?: 'admin' | 'sales';
   };
 
   if (!name || !email || !password) {
@@ -36,6 +37,7 @@ export const register = asyncHandler(async (req: Request, res: Response) => {
     name,
     email: email.toLowerCase(),
     password: hashedPassword,
+    role: role || 'sales',
   });
 
   const token = signToken(String(user._id), user.role);
