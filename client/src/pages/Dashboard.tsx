@@ -19,7 +19,7 @@ export default function Dashboard() {
   const [isDark, setIsDark] = useState(document.documentElement.classList.contains('dark'));
   const [isLeadModalOpen, setIsLeadModalOpen] = useState(false);
   const [leadToEdit, setLeadToEdit] = useState<Lead | null>(null);
-  
+
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [leadToDelete, setLeadToDelete] = useState<Lead | null>(null);
 
