@@ -12,6 +12,12 @@ A full-stack, production-ready B2B Lead Management CRM designed for high-perform
 | **Database** | MongoDB |
 | **Infrastructure** | Docker, Docker Compose, Nginx |
 
+## Deployed
+
+**Frontend**https://gig-flow-smart-leads-dashboard-three.vercel.app/
+
+**Backend**https://gigflow-smart-leads-dashboard-pyjv.onrender.com/
+
 ## Local Setup
 
 1. **Clone the repository:**
